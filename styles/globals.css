@@ -1,0 +1,357 @@
+
+:root{ 
+  --color0: #fff; 
+  --color1: #F06292; 
+  --color2: #71367a; 
+} 
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:'Raleway', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.banniere {
+  height: calc(70vh - 0px);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.banniere:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: calc(114vh - 0px);
+  background: url(/assets/banniere4.jpg) no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+}
+
+.banniere .contenu {
+  position: relative;
+  z-index: 1;
+  height: calc(70vh - 0px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contenu-droit h1 {
+  font-size: 60px;
+  color: var(--color0);
+}
+.contenu-gauche {width: 25%; display: none;}
+.contenu-droit {
+  text-align: left;
+  width: 50%;
+}
+.contenu-gauche  .ant-carousel .slick-dots-bottom {
+  position: absolute;
+  bottom: -30px;
+}
+
+.contenu-gauche img {
+  border-radius: 10px;
+  padding: 0 6px !important;
+}
+
+.contenu-gauche h3 {
+  color: var(--color0);
+  font-weight: 600;
+  text-align: left;
+  font-size: 25px;
+  padding: 50px 0 5px;
+}
+span.font {
+  font-weight: 300;
+}
+span.rose-boutique {
+  font-family: 'Great Vibes', cursive;
+  color: var(--color1);
+}
+
+.contenu-droit h4 {
+  font-size: 30px;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg,#ffc7da, rgb(255, 255, 255),#ffc7da, rgb(255, 255, 255), #ffc7da);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite;
+  margin-bottom: 20px !important;
+  font-weight: 600;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.mobileVisible {
+  display: none
+}
+
+
+.cadre {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.bg-image img {
+  height: 250px;
+  width: 100%;
+  object-position: top center;
+  object-fit: contain;
+}
+
+.card {
+    border: 0;
+    box-shadow: none !important;
+}
+.carde-btn {
+  padding: 0 15px;
+  color: var(--color0);
+  font-weight: 400;
+  font-size: 15px;
+  transition: all .4s ease;
+  border: 1px solid transparent;
+  box-shadow: none !important;
+  line-height: 35px;
+}
+
+.carde-btn:hover {
+  background-color: var(--color2);
+  color: var(--color0);
+}
+
+.page-categories .card {
+  border: 0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%) !important;
+}
+
+.img-thumbnail.activeImage {
+  border-color: orangered;
+  padding: 2px;
+}
+
+img {
+  object-fit: cover;
+  object-position: 0 30%;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  border-color: var(--color1) !important;
+  background: var(--color1) !important;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%) !important;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 5%) !important;
+}
+
+.ant-modal-content {
+  background-color: var(--color0) !important;
+}
+.ant-modal-confirm-info .ant-modal-confirm-body > .anticon {
+  color: var(--color1)!important;
+}
+
+.ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+  margin-left: 0 !important;
+  margin-left: initial !important;
+  text-align: center !important;
+  font-size: 25px !important;
+  position: absolute !important;
+  bottom: -10px !important;
+  font-weight: 600 !important;
+}
+
+.ant-modal {
+  top: 45% !important;
+}
+
+.h2-detail-article {
+  color: var(--color1);
+}
+
+.font-style{
+  font-family: 'Great Vibes', cursive;
+}
+
+span.titre-barres-recherches {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+h1.grand-titre {
+  color: #444444;
+  margin-bottom: 40px;
+}
+.fluid-contenu {
+  padding: 5% 0;
+  position: relative;
+}
+
+footer {
+  background: #f5efef;
+}
+
+.footer-contenu {
+  padding: 1% 0;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-info div {
+  width: calc(100% / 3);
+}
+
+.bouton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bouton-social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bouton-social a {
+  color: black;
+  font-size: 30px;
+}
+
+a.site-horeb {
+  color: var(--color1) !important;
+  font-weight: 700;
+}
+
+.text-description {
+  font-weight: 400 !important;
+}
+
+.container.page-accueil {
+  position: relative;
+  z-index: 1;
+}
+
+.fluid-contenu.page-1:after {
+  content: "";
+  background: url(/assets/design1.jpg) no-repeat;
+  background-position: top left;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-size: 20%;
+}
+footer:after {
+  content: "";
+  background: url(/assets/footer.png);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-size: contain;
+}
+footer {
+  position: relative;
+}
+.fluid-contenu.page-1:before {
+  content: "";
+  background: url(/assets/design2.jpg) no-repeat;
+  background-position: bottom right;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-size: 20%;
+}
+.contact-page {
+  display: flex;
+  align-items: center;
+}
+.contact-page form {
+  width: 50%;
+}
+.contact-page-text {
+  height: 461px;
+  background: #f6ebed;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  border-radius: 5px;
+  width: 50%;
+  font-size: 20px;
+  padding: 35px;
+}
+.ant-notification {
+  z-index: 99999 !important;
+}
+
+.contact-page-text .grand-titre {
+  color: black;
+  font-size: 50px;
+}
+
+.formulaire .contact-page input.form-control {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 3.6rem;
+}
+
+.ant-modal-confirm-content p {
+    font-size: 20px;
+    padding: 10px;
+    background: #dddddd;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+

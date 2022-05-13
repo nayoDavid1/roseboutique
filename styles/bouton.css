@@ -1,0 +1,276 @@
+
+:root{ 
+--color0: #fff; 
+--color1: #F06292; 
+--color2: #71367a; 
+}
+
+
+
+.btn-principal {
+    background-color: transparent;
+    border: 1px solid white;
+    color: var(--color0);
+    transition: all .4s ease;
+    padding: 0px 15px;
+    box-shadow: none !important;
+    font-weight: 500;
+}
+.btn-principal:hover {
+background: var(--color1);
+color: var(--color0);
+}
+
+
+.icon {
+    color: var(--color0);
+    font-size: 30px;
+    padding: 0px 10px;
+  }
+  .icon-facebook {
+    color: var(--color0);
+    font-size: 25px;
+    padding: 0px 15px;
+  }
+  
+  .popup {
+    cursor: pointer;
+    z-index: 9001;
+    position: fixed;
+    display: flex;
+    top: 285px;
+    background: #25D366;
+    right: -100px;
+    transition: .3s ease-in-out;
+    height: 45px;
+    align-items: center;
+}
+.popup a {
+  text-decoration: none;
+  display: flex;
+}
+  .logo img{width:80px}
+  .popup .content {
+    margin: auto;
+    width: 100px;
+    padding: 0 0px;
+    color: var(--color0);
+    font-size: 20px;
+  }
+  .popup .content a{text-align:center;margin:auto;color:#fff;font-size:15px;font-family: var(--police_pricipal);}
+  .popup:hover{right:0}
+  @media screen and (max-width:991px){
+      .popup:hover {
+          max-width: 100%;
+      }
+  }
+  @media screen and (max-width:767px){
+      .popup .content {
+      padding: 0 24px;
+      }
+  }
+  
+  .popup-2 {
+    cursor: pointer;
+    z-index: 9001;
+    position: fixed;
+    display: flex;
+    top: 375px;
+    background: #C13584;
+    right: -100px;
+    transition: .3s ease-in-out;
+    height: 45px;
+    align-items: center;
+  }
+  .popup-2 a {
+    text-decoration: none;
+    display: flex;
+}
+  .popup-2 .content {
+    margin: auto;
+    width: 100px;
+    padding: 0 0px;
+    color: var(--color0);
+    font-size: 20px;
+  }
+  .popup-2 .content a{text-align:center;margin:auto;color:#fff;font-size:15px;font-family: var(--police_pricipal);}
+  .popup-2:hover{right:0}
+  @media screen and (max-width:991px){
+      .popup-2:hover {
+          max-width: 100%;
+      }
+  }
+  @media screen and (max-width:767px){
+      .popup-2 .content {
+      padding: 0 24px;
+      }
+  }
+  
+  
+  .popup-1 {
+    cursor: pointer;
+    z-index: 9001;
+    position: fixed;
+    display: flex;
+    top: 330px;
+    background: #4267B2;
+    right: -100px;
+    transition: .3s ease-in-out;
+    height: 45px;
+    align-items: center;
+}
+.popup-1 a {
+  text-decoration: none;
+  display: flex;
+}
+  .popup-1 .content {
+    margin: auto;
+    width: 100px;
+    padding: 0 0px;
+    color: var(--color0);
+    font-size: 20px;
+  }
+  .popup-1 .content a{text-align:center;margin:auto;color:#fff;font-size:15px;font-family: var(--police_pricipal);}
+  .popup-1:hover{right:0}
+  @media screen and (max-width:991px){
+      .popup-1:hover {
+          max-width: 100%;
+      }
+  }
+  @media screen and (max-width:767px){
+      .popup-1 .content {
+      padding: 0 24px;
+      }
+  }
+
+
+
+  .ant-carousel .slick-dots-bottom {
+    bottom: -130px !important;
+  }
+  
+  .ant-carousel .slick-dots {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex !important;
+    justify-content: center;
+    margin-right: 15% !important;
+    margin-left: -68% !important;
+    padding-left: 0;
+    list-style: none;
+}
+
+.icone-delete, .icone-edit {
+  margin: 0 10px;
+}
+
+.icone-delete {
+  color: red !important;
+}
+
+.icone-edit {
+  color: blue !important;
+}
+
+.btn-modal-oui{
+  line-height: 10px;
+  box-shadow: none !important;
+  font-size: 15px !important;
+  color: var(--color0) !important;
+  font-weight: 400;
+  transition: all .4s ease;
+  border: 1px solid transparent;
+}
+.btn-modal-non:hover {
+  background-color: transparent !important;
+  color: var(--color2) !important;
+  border-color: var(--color2) !important;
+  
+}
+.btn-modal-oui:hover {
+  background-color: transparent !important;
+  color: var(--color1) !important;
+  border-color: var(--color1) !important;
+}
+
+.btn-modal-non{
+  line-height: 10px;
+  box-shadow: none !important;
+  font-size: 15px !important;
+  color: var(--color0) !important;
+  background-color: var(--color2);
+  font-weight: 400;
+  transition: all .4s ease;
+  border: 1px solid transparent;
+}
+
+.btn-supprimer{
+  padding: 0 15px;
+    color: var(--color0);
+    font-weight: 400;
+    font-size: 15px;
+    transition: all .4s ease;
+    border: 1px solid transparent;
+    box-shadow: none !important;
+    line-height: 35px;
+    background-color: black;
+}
+
+.charger-plus {
+  line-height: 30px;
+  border-color: var(--color1);
+  background: var(--color0);
+  color: var(--color1);
+  font-size: 15px;
+  transition: all .4s ease;
+  border: 1px solid;
+}
+
+.charger-plus:hover {
+  background-color: var(--color1);
+  color: var(--color0);
+  border-color: var(--color1);
+}
+
+.btn-delete-all {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.btn-delete-all input[type="checkbox"] {
+  height: 20px !important;
+  width: 25px !important;
+}
+
+.btn-delete-all button {
+  line-height: 25px;
+  padding: 10px;
+  font-size: 15px;
+  background: black;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+
+a.footer-face {
+  background: #4267b2;
+  padding: 0px 15px;
+  color: white !important;
+  margin: 5px;
+}
+
+a.footer-instagram {
+  background: #c13584;
+  padding: 0px 12px;
+  color: white !important;
+  margin: 5px;
+}
+a.footer-whatsapp {
+  background: #25d366;
+  padding: 0px 12px;
+  color: white !important;
+  margin: 5px;
+}

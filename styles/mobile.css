@@ -1,0 +1,168 @@
+:root{ 
+  --color0: #fff; 
+  --color1: #F06292; 
+  --color2: #71367a; 
+} 
+
+@media (max-width:991px){
+  .mobileVisible {
+    display: block !important;
+    position: fixed;
+    z-index: 9999;
+    right: 10px;
+    top: 20px;
+}
+.navbar-nav {
+  display: none;
+}
+.contenu-droit {
+  text-align: left;
+  width: 100% !important;
+}
+.banniere:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: url(/assets/banniere4.jpg) no-repeat;
+  background-size: cover !important;
+  background-attachment: fixed;
+  background-position: center top !important;
+}
+.contact-page-text .grand-titre {
+  color: black;
+  font-size: 30px !important;
+}
+.contact-page-text p {
+  font-size: 20px !important;
+}
+.banniere:after {
+  content: '';
+  background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.71) 13%, rgb(255 255 255 / 0%) 75%, rgb(255 255 255 / 0%) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+}
+.banniere .container {
+  position: relative;
+  z-index: 2;
+}
+.onglet-mobile {
+  position: relative;
+  top: 30px;
+}
+.navbar.active a.nav-link.activeNav, a.nav-link.activeNav {
+  color: var(--color1) !important;
+  padding: 8px 0 !important;
+}
+.onglet-mobile ol.nav-item {
+  background: var(--color1);
+}
+.onglet-mobile ol.nav-item .nav-link {
+  color: white !important;
+  font-size: 20px;
+}
+
+.onglet-mobile ol.nav-item .logout {
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  line-height: 50px;
+}
+}
+
+@media  (min-width:768px) and (max-width:991px){
+    .contenu-droit h1 {
+      font-size: 40px;
+    }
+    .contenu-droit h4 {
+      font-size: 25px;
+    }
+    span.font {
+      font-size: 15px;
+    }
+    .contenu-gauche h3 {
+        font-size: 15px;
+    }
+    }
+    
+
+@media (max-width:767px){
+  .contenu-droit h1 {
+    font-size: 40px;
+  }
+  .contenu-droit h4 {
+    font-size: 25px;
+  }
+  span.font {
+    font-size: 15px;
+  }
+  .contenu-gauche h3 {
+      font-size: 15px;
+  }
+  .contenu-gauche {
+    width: 25%;
+    display: none;
+}
+.banniere .contenu {
+  position: relative;
+  z-index: 1;
+  height: calc(80vh - 0px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cadre {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.container.page-accueil {
+  text-align: center;
+}
+.cadre {
+  display: flex;
+  justify-content: center !important;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  align-items: center;
+}
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.contenu-droit h1 {
+  font-size: 40px !important;
+  color: var(--color0);
+  margin-bottom: 0px !important;
+}
+.contact-page {
+  flex-direction: column !important;
+}
+.contact-page-text, .contact-page form {
+  width: 100% !important;
+}
+.contenu-droit .btn-principal {
+  font-size: 15px !important;
+}
+}
